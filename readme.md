@@ -7,7 +7,7 @@ Passport, general helpers for handling auth in Express apps
 Passport strategy, helpers for authenticating with one specific
 method (email, password, Facebook)
 
-# # Technologies Used
+## Technologies Used
 
 The MERN Stack: React, Redux, Node, Express, MongoDB, ChartJS, Materalize CSS, Redux Form,
 
@@ -72,7 +72,9 @@ paste in the copyied code hit enter
 const Survey = mongoose.model('surveys')
 Survey.find({}).then(console.log)
 
-# # Features to Add:
+## Features to Add:
+
+Testing
 
 Delete Surveys
 
