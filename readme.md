@@ -9,9 +9,9 @@ method (email, password, Facebook)
 
 ## Technologies Used
 
-The MERN Stack: React, Redux, Node, Express, MongoDB, ChartJS, Materalize CSS, Redux Form,
+The MERN Stack: React 17, Redux, Node, Express, MongoDB, ChartJS, Materalize CSS, Redux Form, SendGrid, Stripe
 
-SendGrid, Stripe
+npm install react@17.0.0-rc.3 react-dom@17.0.0-rc.3
 
 Google Oauth
 
@@ -73,6 +73,8 @@ const Survey = mongoose.model('surveys')
 Survey.find({}).then(console.log)
 
 ## Features to Add:
+
+Next.js
 
 Testing
 

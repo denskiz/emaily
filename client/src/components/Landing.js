@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
 
-function Landing() {
+const Landing = ()=> {
   return (
     <div>
       <section className="section section-about grey lighten-5 center">
