@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.5.0",
+    "npm": "7.20.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js --ignore client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "webhook": "ssh -R dennisentemaily1984:80:localhost:5000 serveo.net"
+  },
+  "author": "Dennis Ent",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "6.2.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "path-parser": "6.1.0",
+    "redux-thunk": "^2.3.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^8.165.0"
+  }
+}
