@@ -18,7 +18,7 @@ MongoDB https://cloud.mongodb.com/
 ChartJS 
 Bootstrap 5
 Redux Form
-SendGrid 
+SendGrid  https://sendgrid.com/
 Stripe  https://dashboard.stripe.com/
 
 Google Oauth
@@ -95,21 +95,19 @@ Code Splitting
 Caching using redis
 
 
-
- sendgrid-nodejs V6:
-
-
-
-
-
-
 check out:
 https://github.com/rojasleon/emaily
 
 611 kb - 463kb
 17 kb - 17.5kb
 
-## getting webhooks to work
+## getting webhooks/click tracking to work
 
 npx ngrok http 5000
+
+check activity tab in sendgrid to check clicks
+
+sendgrid settings>mailsettings>webhooks
+change the url to:  http://bb35b3f6803c.ngrok.io/api/surveys/webhooks
+change to your local tunnel address
 
