@@ -66,7 +66,6 @@ function Surveys({ fetchSurveys, surveys }) {
 }
 
 function mapStateToProps({ surveys }) {
-  console.log(surveys);
   return { surveys };
 }
 

@@ -87,13 +87,13 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
       </div>
 
       <Link className="btn btn-danger" to="/surveys">
-        <i class="bi bi-x-lg"></i>
+        <i className="bi bi-x-lg"></i>
         {"  "}
         Cancel
       </Link>
 
       <button type="submit" className="btn btn-success float-end">
-        <i class="bi bi-chevron-right"></i>
+        <i className="bi bi-chevron-right"></i>
         {"  "}
         Next
       </button>

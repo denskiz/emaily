@@ -4,12 +4,7 @@ import * as actions from "../../actions";
 
 import { Link } from "react-router-dom";
 
-const SurveyReview = ({ onCancel, formValues, submitSurvey, navigate }) => {
-  // const submit = () => {
-  //   submitSurvey(formValues);
-  //   navigate(`./`);
-  // };
-
+const SurveyReview = ({ onCancel, formValues, submitSurvey }) => {
   return (
     <div>
       <h5>Please confirm your entries</h5>
@@ -31,28 +26,18 @@ const SurveyReview = ({ onCancel, formValues, submitSurvey, navigate }) => {
       </div>
       <br />
       <button onClick={onCancel} className="btn btn-danger">
-        <span class="btn-label">
-          <i class="bi bi-arrow-90deg-left"></i>
+        <span className="btn-label">
+          <i className="bi bi-arrow-90deg-left"></i>
         </span>
         {"  "}Back
       </button>
-
-      {/* <button
-        onClick={() => {
-          submitSurvey(formValues);
-          navigate("/credits");
-        }}
-        className="btn btn-success float-end"
-      >
-        <i class="bi bi-envelope-fill"></i> {"  "}Send Survey
-      </button> */}
 
       <Link
         className="btn btn-success float-end"
         onClick={() => submitSurvey(formValues)}
         to="/"
       >
-        <i class="bi bi-envelope-fill"></i> {"  "}Send Survey
+        <i className="bi bi-envelope-fill"></i> {"  "}Send Survey
       </Link>
     </div>
   );

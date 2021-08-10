@@ -50,9 +50,7 @@ cookies are more secure than JSON web tokens
 In production there is no proxy and a request to api/current_user
 goes directly to server
 
-environment variables in React
-we have two files in src folder .env.development and .env.production
-REACT_APP_STRIPE_KEY=pk_test_wd6JOemZHTRKYwKJiobuPppm
+
 
 The express server just serves json
 There are 3 endpoints:
@@ -108,5 +106,10 @@ Caching using redis
 check out:
 https://github.com/rojasleon/emaily
 
-611 kb
-17 kb
+611 kb - 463kb
+17 kb - 17.5kb
+
+## getting webhooks to work
+
+npx ngrok http 5000
+

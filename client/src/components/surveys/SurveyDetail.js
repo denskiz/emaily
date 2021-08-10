@@ -53,13 +53,13 @@ const SurveyDetail = ({ onReturnClick, currentSurvey }) => {
         </div>
         <div className="row">
           <div className="col-md-10">
-            <div class="card-body">
-              <h5 class="card-title">Title</h5>
-              <p class="card-text">{currentSurvey.title}</p>
-              <h5 class="card-title">Subject</h5>
-              <p class="card-text">{currentSurvey.subject}</p>
-              <h5 class="card-title">Body</h5>
-              <p class="card-text">{currentSurvey.body}</p>
+            <div className="card-body">
+              <h5 className="card-title">Title</h5>
+              <p className="card-text">{currentSurvey.title}</p>
+              <h5 className="card-title">Subject</h5>
+              <p className="card-text">{currentSurvey.subject}</p>
+              <h5 className="card-title">Body</h5>
+              <p className="card-text">{currentSurvey.body}</p>
               <button
                 className="btn btn-primary"
                 onClick={(e) => {
