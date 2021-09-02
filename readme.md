@@ -9,17 +9,17 @@ method (email, password, Facebook)
 
 ## Technologies Used
 
-The MERN Stack: 
-React 17 
-Redux 
+The MERN Stack:
+React
+Redux
 Node
 Express
 MongoDB https://cloud.mongodb.com/
-ChartJS 
+ChartJS
 Bootstrap 5
 Redux Form
-SendGrid  https://sendgrid.com/
-Stripe  https://dashboard.stripe.com/
+SendGrid https://sendgrid.com/
+Stripe https://dashboard.stripe.com/
 
 Google Oauth
 
@@ -49,8 +49,6 @@ cookies are more secure than JSON web tokens
 
 In production there is no proxy and a request to api/current_user
 goes directly to server
-
-
 
 The express server just serves json
 There are 3 endpoints:
@@ -94,7 +92,6 @@ Code Splitting
 
 Caching using redis
 
-
 check out:
 https://github.com/rojasleon/emaily
 
@@ -108,6 +105,5 @@ npx ngrok http 5000
 check activity tab in sendgrid to check clicks
 
 sendgrid settings>mailsettings>webhooks
-change the url to:  http://bb35b3f6803c.ngrok.io/api/surveys/webhooks
+change the url to: http://bb35b3f6803c.ngrok.io/api/surveys/webhooks
 change to your local tunnel address
-

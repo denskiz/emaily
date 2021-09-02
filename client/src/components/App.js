@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { connect } from "react-redux";
-import * as actions from "../actions";
-import Header from "./Header";
-import Landing from "./Landing";
-import Dashboard from "./Dashboard";
-import SurveyNew from "./surveys/SurveyNew";
-import Credits from "./Credits";
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+import Header from './Header';
+import Landing from './Landing';
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
+import Credits from './Credits';
 
-import Payments from "./Payments";
+import Payments from './Payments';
 
 const App = (props) => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const App = (props) => {
   });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Header />
       <div className="container">
         <br />
