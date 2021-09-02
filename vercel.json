@@ -11,10 +11,10 @@
     }
   ],
 
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "destination": "/"
+      "source": "/(.*)",
+      "destination": "/index.js"
     }
   ]
 }
