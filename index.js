@@ -35,7 +35,6 @@ require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
-  require('dotenv').config({ path: __dirname + '/.env' });
   // Express will serve up production assets
   // like our main.js file, or main.css file!
   app.use(express.static('client/build'));
