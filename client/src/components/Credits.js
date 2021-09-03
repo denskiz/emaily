@@ -1,5 +1,5 @@
-import { connect } from "react-redux";
-import Payments from "./Payments";
+import { connect } from 'react-redux';
+import Payments from './Payments';
 
 const Credits = ({ auth }) => {
   function renderCredits() {
@@ -60,9 +60,9 @@ const Credits = ({ auth }) => {
           <blockquote>
             <b>Available Credits : {renderCredits()}</b>
           </blockquote>
-          <a className="btn btn-primary">
+          <button className="btn btn-primary">
             <Payments />
-          </a>
+          </button>
         </div>
       </div>
     );
