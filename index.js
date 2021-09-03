@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({ path: __dirname + '/.env' });
+}
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
