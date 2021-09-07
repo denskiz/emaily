@@ -16,7 +16,7 @@ const App = (props) => {
   });
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
       <Header />
       <div className="container">
         <br />
