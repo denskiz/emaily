@@ -9,19 +9,19 @@ method (email, password, Facebook)
 
 ## Technologies Used
 
-The MERN Stack:
-React
-Redux
-Node
-Express
-MongoDB https://cloud.mongodb.com/
-ChartJS
-Bootstrap 5
-Redux Form
-SendGrid https://sendgrid.com/
-Stripe https://dashboard.stripe.com/
+- The MERN Stack:
+- React
+- Redux
+- Node
+- Express
+- MongoDB https://cloud.mongodb.com/
+- ChartJS
+- Bootstrap
+- React Hook Form
+- SendGrid https://sendgrid.com/
+- Stripe https://dashboard.stripe.com/
 
-Google Oauth
+- Google Oauth
 
 https://console.developers.google.com/
 click credentials

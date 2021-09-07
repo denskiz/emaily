@@ -1,9 +1,9 @@
 // SurveyForm shows a form for a user to add input
-import { useForm } from "react-hook-form";
-import { formData } from "../../actions";
-import { Link } from "react-router-dom";
-import validateEmails from "./validateEmails";
-import { connect } from "react-redux";
+import { useForm } from 'react-hook-form';
+import { formData } from '../../actions';
+import { Link } from 'react-router-dom';
+import validateEmails from './validateEmails';
+import { connect } from 'react-redux';
 
 const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
   const {
@@ -11,7 +11,7 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
     handleSubmit,
     formState: { errors },
   } = useForm({
-    mode: "onBlur",
+    mode: 'onBlur',
     defaultValues: PreviousformData,
   });
 
@@ -27,14 +27,15 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
           Survey Title
         </label>
         <input
+          placeholder="Survey Title"
           type="text"
           id="title"
           className="form-control"
-          {...register("title", { required: true })}
+          {...register('title', { required: true })}
         />
-        <div style={{ color: "red" }}>
-          {errors.title?.type === "required" &&
-            "You must provide a survey title"}
+        <div style={{ color: 'red' }}>
+          {errors.title?.type === 'required' &&
+            'You must provide a survey title'}
         </div>
       </div>
       <div className="mb-3">
@@ -42,14 +43,15 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
           Subject Line
         </label>
         <input
+          placeholder="Subject Line"
           type="text"
           id="subject"
           className="form-control"
-          {...register("subject", { required: true })}
+          {...register('subject', { required: true })}
         />
-        <div style={{ color: "red" }}>
-          {errors.subject?.type === "required" &&
-            "You must provide a subject line"}
+        <div style={{ color: 'red' }}>
+          {errors.subject?.type === 'required' &&
+            'You must provide a subject line'}
         </div>
       </div>
       <div className="mb-3">
@@ -57,13 +59,14 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
           Email Body
         </label>
         <input
+          placeholder="Email Body"
           type="text"
           id="body"
           className="form-control"
-          {...register("body", { required: true })}
+          {...register('body', { required: true })}
         />
-        <div style={{ color: "red" }}>
-          {errors.body?.type === "required" && "You must provide a email body"}
+        <div style={{ color: 'red' }}>
+          {errors.body?.type === 'required' && 'You must provide a email body'}
         </div>
       </div>
       <div className="mb-3">
@@ -71,30 +74,31 @@ const SurveyForm = ({ onSurveySubmit, formData, PreviousformData }) => {
           Recipient Email List
         </label>
         <input
+          placeholder="Recipient Email List"
           type="text"
           id="recipients"
           className="form-control"
-          {...register("recipients", {
+          {...register('recipients', {
             validate: validateEmails,
           })}
         />
         <div id="emailHelp" className="form-text">
           Each email must be seperated by a comma ,
         </div>
-        <div style={{ color: "red" }}>
-          {errors.recipients?.type === "validate" && "These emails are invalid"}
+        <div style={{ color: 'red' }}>
+          {errors.recipients?.type === 'validate' && 'These emails are invalid'}
         </div>
       </div>
 
       <Link className="btn btn-danger" to="/surveys">
         <i className="bi bi-x-lg"></i>
-        {"  "}
+        {'  '}
         Cancel
       </Link>
 
       <button type="submit" className="btn btn-success float-end">
         <i className="bi bi-chevron-right"></i>
-        {"  "}
+        {'  '}
         Next
       </button>
     </form>
